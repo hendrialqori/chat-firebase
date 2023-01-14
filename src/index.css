@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #f8f8ea;
+}
+
+[aria-label='message-item'] {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+#owner {
+  margin-right: 0px;
+  margin-left: auto;
+  background: linear-gradient(to left ,rgb(84, 84, 180), rgb(184, 14, 155));
+  color: white;
+  padding: 13px;
+  font-weight: 600;
+  max-width: 70%;
+  border-radius: 20px;
+}
+
+
+#friend {
+  max-width: 70%;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 13px;
+  margin-right: auto;
+  margin-left: 13px;
+  background: rgb(245, 244, 244);
+}
+
+
+[aria-label="loading-spin"] {
+  margin: auto;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: #ffff;
+  border: 5px solid #fff;
+  border-bottom: 5px solid #000;
+  animation: spinner .9s infinite linear;
+  background: transparent;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left ,rgb(84, 84, 180), rgb(184, 14, 155));
+    border-radius: 5px;
+    cursor: grab;
+  }
